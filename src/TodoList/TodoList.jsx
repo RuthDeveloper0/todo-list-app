@@ -1,5 +1,4 @@
 import React from 'react';
-import TodoItem from '../TodoItem/TodoItem'; // ייבוא הקומפוננטה החדשה
 
 function TodoList() {
   const tasks = [
@@ -13,8 +12,7 @@ function TodoList() {
       <h2>רשימת משימות</h2>
       <ul>
         {tasks.map((task, index) => (
-          // שליחת המשימה כ-prop לקומפוננטה הבודדת
-          <TodoItem key={index} taskText={task} />
+          <li key={index}>{task}</li>
         ))}
       </ul>
     </div>
