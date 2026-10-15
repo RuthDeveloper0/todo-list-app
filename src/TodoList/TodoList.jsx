@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoItem from '../TodoItem/TodoItem';
 
 function TodoList() {
   const tasks = [
@@ -12,7 +13,7 @@ function TodoList() {
       <h2>רשימת משימות</h2>
       <ul>
         {tasks.map((task, index) => (
-          <li key={index}>{task}</li>
+          <TodoItem key={index} taskText={task} />
         ))}
       </ul>
     </div>
